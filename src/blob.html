@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <video controls></video>
+  <script>
+    const video = document.querySelector('video');
+    const videoUrl = '1.mp4';
+
+    function fetchVideo() {
+      fetch(videoUrl, {
+        responseType: 'arraybuffer',
+        headers: {
+          range: 'bytes=0-102300',
+        }
+      })
+        .then(res => res.arrayBuffer())
+        .then(buf => {
+          console.log(buf);
+          const blob = new Blob([buf], {type: 'video/mp4'});
+          const url = URL.createObjectURL(blob);
+          video.src = url;
+          video.play();
+        })
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      fetchVideo();
+    })
+  </script>
+</body>
+
+</html>

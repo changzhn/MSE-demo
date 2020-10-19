@@ -28,7 +28,7 @@ async function sourceOpen (_) {
   // console.log('mode: %s', sourceBuffer.mode);
 
   sourceBuffer.addEventListener('error', function(e) {
-    console.trace(e)
+    // console.trace(e)
   })
 
   sourceBuffer.addEventListener('updateend', function (_) {
