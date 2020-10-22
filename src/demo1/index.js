@@ -4,7 +4,7 @@ var baseBytes = 1000 * 1000 - 1;
 var queue = [];
 var sourceBuffer = null;
 
-var assetURL = 'frag_bunny.mp4';
+var assetURL = '../assets/frag_bunny.mp4';
 
 // Need to be specific for Blink regarding codecs
 // ./mp4info frag_bunny.mp4 | grep Codec

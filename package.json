@@ -1,0 +1,19 @@
+{
+  "name": "MSE-demo",
+  "version": "1.0.0",
+  "description": "## MSE demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://hub.fastgit.org/changzhn/MSE-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "demuxer": "^2.1.2"
+  }
+}

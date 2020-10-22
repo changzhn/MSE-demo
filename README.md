@@ -1,6 +1,8 @@
 # MSE播放fmp4示例
 
-## MSE demo
+## demo1
+
+> MSE 分片请求
 
 ### 流程
 1. 使用fetch range请求mp4 -> arraybuffer
@@ -37,9 +39,9 @@ mp4 example.mp4 | grep Codec
 可以使用任一http-server工具
 
 
-## blob demo
+## demo2
 
-使用普通的mp4
+> video标签使用 blob://
 
 如果全量请求数据，binary data -> arraybuffer -> blob -> URL 是可以正常播放的
 但是请求部分数据是无法播放

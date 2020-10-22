@@ -11,13 +11,13 @@
   <video controls></video>
   <script>
     const video = document.querySelector('video');
-    const videoUrl = '1.mp4';
+    const videoUrl = '../assets/1.mp4';
 
     function fetchVideo() {
       fetch(videoUrl, {
         responseType: 'arraybuffer',
         headers: {
-          range: 'bytes=0-102300',
+          // range: 'bytes=0-102300',
         }
       })
         .then(res => res.arrayBuffer())
